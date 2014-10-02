@@ -1,0 +1,20 @@
+import java.util.Date
+import scala.reflect.{BeanProperty, BooleanBeanProperty}
+//remove if not needed
+import scala.collection.JavaConversions._
+
+class IDCard {
+
+  @BeanProperty
+  var card_id: Int = _
+
+  @BeanProperty
+  var card_name: String = _
+
+  @BeanProperty
+  var card_number: String = _
+
+  @BeanProperty
+  var expiration_date: Date = _
+}
+

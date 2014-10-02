@@ -1,0 +1,16 @@
+package application
+
+import java.util.Date
+import scala.reflect.{BeanProperty, BooleanBeanProperty}
+//remove if not needed
+import scala.collection.JavaConversions._
+
+class User(@BeanProperty var userId: Int, 
+    @BeanProperty var email: String, 
+    @BeanProperty var password: String, 
+    @BeanProperty var created_at: Date, 
+    @BeanProperty var updated_at: Date) {
+
+  @BeanProperty
+  var name: String = _
+}
